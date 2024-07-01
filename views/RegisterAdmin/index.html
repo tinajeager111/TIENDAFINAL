@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro Admin</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link href="../css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container px-4 px-lg-5">
+      <a  href="/dashboard" class="navbar-brand">B Y A</a>
+
+      <div class="navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4"> 
+              <li class="nav-item"><a class="nav-link active" aria-current="page"
+                  >Registra un nuevo administrador</a></li>
+          
+          </ul>
+          <a class="d-flex">
+              <a style="margin:1%">
+                  <div id="logOut" class="btn btn-outline-dark">
+                      <div class="text-center">
+                          <spam>Cerrar Sesion</spam>
+                      </div>
+                  </div>
+</a>
+             
+          
+</a>
+
+      </div>
+  </div>
+
+
+</nav>
+  <header class="bg-dark py-5">
+
+
+  <div class="container px-4 px-lg-5 my-5">
+    <p class="notification"></p>
+
+    <div class="container-form"> 
+
+  <form id="formulario">
+    <p class="form-title">Crea una cuenta de administrador</p>
+
+    <div class="input-container"><label for="nombre"
+      class="text-white bg-dark text-xs font-semibold relative top-2 ml-[7px] px-[3px] bg-[#e8e8e8] w-fit">Nombre</label>
+        <input type="text" id="nombre" placeholder="Nombre">
+      </div>
+     <div class="input-container"><label for="email"
+      class="text-white bg-dark text-xs font-semibold relative top-2 ml-[7px] px-[3px] bg-[#e8e8e8] w-fit">Email</label>
+       <input id="email" type="email" placeholder="Ingrese su correo">
+ 
+   </div>
+   <div class="input-container">      <label
+    class="text-white bg-dark text-xs font-semibold relative top-2 ml-[7px] px-[3px] bg-[#e8e8e8] w-fit"for="telefono">Ingrese su numero de whatsapp (formato +584127030588)</label>
+
+    <input type="text" value="+58" id="telefono">
+  </div>
+   
+   <div class="input-container"><label for="password"
+    class="text-white bg-dark text-xs font-semibold relative top-2 ml-[7px] px-[3px] bg-[#e8e8e8] w-fit">Contraseña</label>
+       <input type="password" id="password" placeholder="Crea una contraseña">
+     </div>
+     <div class="input-container"><label for="password2"
+      class="text-white bg-dark text-xs font-semibold relative top-2 ml-[7px] px-[3px] bg-[#e8e8e8] w-fit">Confirma la contraseña</label>
+        <input type="password" id="confirmpass" placeholder="Confirma la contraseña">
+      </div>
+      <button type="submit" id="save" class="submit">
+     Crear usuario
+   </button>
+
+   <p class="signup-link">
+     ¿Ya tienes cuenta?
+     <a href="/Login">Iniciar sesion</a>
+   </p>
+
+</form>
+    </div>
+  </div>
+  
+  </header>
+  <script type="module" src="index.js"></script>
+
+</body>
+
+</html>
