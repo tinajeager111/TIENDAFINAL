@@ -25,7 +25,7 @@ conectarDB()
 //rutas de frontend 
 
 app.use('/', express.static(path.resolve('views', 'home')))
-app.use('/Login', express.static(path.resolve('views', 'usuarioLogIn')))
+app.use('/Login', express.static(path.resolve('views', 'usuarioLogin')))
 app.use('/Register', express.static(path.resolve('views', 'usuarioRegister')))
 app.use('/css', express.static(path.resolve('views', 'css')))
 app.use('/img', express.static(path.resolve('views', 'img')))
