@@ -1,3 +1,2 @@
-user administrador alguien@gmail.com 
-password = 1234
-
+user administrador "alguien@gmail.com" 
+password "kenobi2005"
